@@ -1,6 +1,6 @@
 [
   {
-    "guid": com.ulabox.plugins.replication_satus,
+    "guid": com.ulabox.plugins.replication_status,
     "download_url": https://github.com/ulabox/newrelic_mysql_java_plugin/blob/master/dist/newrelic_mysql_plugin-2.0.0.tar.gz?raw=true,
     "publisher": Ulabox,
     "version": 2.0.0,
