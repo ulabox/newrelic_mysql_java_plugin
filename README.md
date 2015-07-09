@@ -2,7 +2,6 @@
 
 New Relic plugin that extends form the MySQL plugin to give more accurate information about replication in your MySQL database.
 
-----
 
 ## Requirements
 
@@ -15,7 +14,6 @@ The requirements for running this plugin are:
 
 **Note:** The MySQL Plugin includes the [Connector/J JDBC Driver](http://dev.mysql.com/usingmysql/java/) and it does not need to be installed separately.
 
-----
 
 ## Installation
 
@@ -24,8 +22,7 @@ Ulabox Replication Status is installed via New Relic's NPI:
 	1. Download the manifest.json from this repository.
 	2. Place it in the config directory from your NPI's installation folder.
 	3. Run `./npi install <guid> --untrusted`
-
-----
+	
     
 ## Configuration Information
 
@@ -121,6 +118,7 @@ Example:
 }
 ```
 
+
 ### Additional Configuration
 
 #### Create a MySQL user (optional)
@@ -142,6 +140,7 @@ If your MySQL Server is bound to an externally visible IP address, both localhos
     CREATE USER newrelic@<INSERT_IP_ADDRESS_HERE> IDENTIFIED BY '<INSERT_HASHED_PASSWORD_HERE>';
     GRANT PROCESS, REPLICATION CLIENT ON *.* TO newrelic@<INSERT_IP_ADDRESS_HERE>;
 
+
 #### Selecting metrics
 
 The MySQL Plugin is capable of reporting different sets of metrics by configuring the 'metrics' attribute. E.g., add the 'slave' category to report replication metrics. 
@@ -149,10 +148,6 @@ The MySQL Plugin is capable of reporting different sets of metrics by configurin
 
 **Note:** The `innodb_mutex` metric category can lead to increased memory usage for the plugin if the monitored database is under a high level of contention (i.e. large numbers of active mutexes).
 
-----
-----
-
-----
 
 ## Credits
 
