@@ -26,7 +26,7 @@ public class MySQLAgent extends Agent {
     
     private static final Logger logger = Logger.getLogger(MySQLAgent.class);
     
-    private static final String GUID = "com.newrelic.plugins.mysql.instance";
+    private static final String GUID = "com.ulabox.plugins.replication_satus";
     private static final String version = "2.0.0";
 
     public static final String AGENT_DEFAULT_HOST = "localhost"; // Default values for MySQL Agent

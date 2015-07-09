@@ -167,7 +167,7 @@ public class MySQL {
                         if (SECONDS_BEHIND_MASTER.equals(columnName)) {
                             if (value == null) {
                                 String key = buildString(category, SEPARATOR, columnName);
-                                results.put(key, -1.0f);
+                                results.put(key, 13131313.13f);
                             }
                         }
                     }
